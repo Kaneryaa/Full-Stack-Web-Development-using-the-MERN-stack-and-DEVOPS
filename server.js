@@ -7,8 +7,9 @@ const PORT = 3000;
 connectDB();
 
 
-
-app.use("/api/users",  require ("./routes/productsApi"));
+app.use(express.json({ extendes: false }))
+app.use("/api/products",  require ("./routes/productsApi"));
+app.use("/api/users",  require ("./routes/userApi"));
 
 app.get("/" , function (req, res) {
   res.status(200).send("Hello world")
