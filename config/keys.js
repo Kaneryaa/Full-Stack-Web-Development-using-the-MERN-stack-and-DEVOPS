@@ -1,5 +1,6 @@
 module.exports = {
-  mongoURI:"mongodb+srv://kanerya7:5ACk2wrsoV5rqHBZ@cluster0.neaufnw.mongodb.net/"
+  mongoURI:"mongodb+srv://kanerya7:CWES8DbI9W5gioZZ@cluster0.flwxotz.mongodb.net/?retryWrites=true&w=majority",
+  jwtSecret : "SecrateKey123"
 }
 
 

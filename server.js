@@ -10,6 +10,7 @@ connectDB();
 app.use(express.json({ extendes: false }))
 app.use("/api/products",  require ("./routes/productsApi"));
 app.use("/api/users",  require ("./routes/userApi"));
+app.use("/api/auth", require ("./routes/authApi"))
 
 app.get("/" , function (req, res) {
   res.status(200).send("Hello world")
